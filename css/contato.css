@@ -52,31 +52,6 @@ section {
     background-color: #FFFFFF;
 }
 
-/* .heading {
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    letter-spacing: 3px;
-    margin-right: -3px;
-    margin-bottom: 5rem;
-    text-align: center;
-    color: #333333;
-    position: relative;
-}
-
-.heading::after {
-    content: "";
-    width: 10rem;
-    height: .8rem;
-    background-color: #45E19F;
-} */
-
-/* body{
-    background-color:#eee;
-    margin-top:20px;
-} */
-
-
-
 .border-5, .border-w-5 {
     border-width: 5px !important;
 }
@@ -93,9 +68,6 @@ em {
 .font-weight-normal {
     font-weight: 400 !important;
 }
-
-
-
 
 footer {
     width: 100%;
