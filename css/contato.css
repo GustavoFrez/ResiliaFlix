@@ -43,12 +43,28 @@ header .fundo-menu {
 
 main {
     text-decoration: none;
-    /* background-color: #2F2F2F; */
     background-color: #FFFFFF;
 }
 
-.divcolor1 {
-    background-color: #000000;
+.div-frez {
+    background-color: #254458;
+    position: relative;
+}
+
+.div-barbara {
+  background-color: #A2205C;
+}
+
+.div-pedro {
+  background-color: #374136;
+}
+
+.div-ale {
+  background-color: #E86132;
+}
+
+.div-gustavo {
+  background-color: #3B3736;
 }
 
 .border-5, .border-w-5 {
