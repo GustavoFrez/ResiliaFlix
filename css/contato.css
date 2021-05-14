@@ -1,9 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 body {
     background-color: #000000;
     font-family: "Roboto", sans-serif;
@@ -15,41 +9,46 @@ header .fundo-menu {
     background-color: #000000;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+  }
   
-#nav-container {
+  #nav-container {
     padding-top: 0;
     padding-bottom: 0;
-}
+  }
   
-#logo {
+  #logo {
     width: 130px;
     margin-left: 30px;
-}
+  }
   
-.navbar-nav {
+  .navbar-nav {
     margin-right: 20px;
-}
+  }
   
-#navbar-links a {
+  #navbar-links a {
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 15px;
-}
+  }
   
-.nav-expand-lg .navbar-nav .nav-link {
+  .nav-expand-lg .navbar-nav .nav-link {
     padding: 1rem 0.8rem;
-}
+  }
   
-.lupa {
+  .lupa {
     width: 16px;
     cursor: pointer;
+  }
+
+main {
+    text-decoration: none;
+    /* background-color: #2F2F2F; */
+    background-color: #FFFFFF;
 }
 
-section {
-    text-decoration: none;
-    background-color: #FFFFFF;
+.divcolor1 {
+    background-color: #000000;
 }
 
 .border-5, .border-w-5 {
@@ -57,7 +56,7 @@ section {
 }
 .border-white {
     border: 1px solid transparent;
-    border-color: #fff !important;
+    border-color: #FFFFFF !important;
 }
 hr.hr-primary {
     border-top-color: #CC164D!important;
@@ -74,13 +73,14 @@ footer {
     height: 60px;
     color: #FFFFFF;
     background-color: #F31D1D;
-}
+  }
   
-.footer {
+  .footer {
    text-align: center;
    padding-top: 8px;
-}
+  }
   
-footer img {
+  footer img {
     width: 100px;
-}
+   
+  }
