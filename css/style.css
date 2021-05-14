@@ -118,7 +118,7 @@ footer img {
 
 /* -------------- RESPONSVO HOME -----------------*/
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1397px) {
   .carousel-inner {
       height: auto;
   }
