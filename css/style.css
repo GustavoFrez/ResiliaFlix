@@ -6,37 +6,78 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  background-color: #000;
+}
+
 /*MENU*/
 
-header .fundo-menu {
-  background-color: #000;
-  padding-top: 20px;
-  padding-bottom: 20px;
+nav {
+  width: 100%;
+  height: 70px;
+  z-index: 50;
+  position: initial;
 }
 
-#nav-container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-#logo {
+.logo a img {
   width: 130px;
-  margin-left: 30px;
 }
 
-.navbar-nav {
-  margin-right: 20px;
+label.logo {
+  position: absolute;
+  margin: 22px 30px;
 }
 
-#navbar-links a {
+nav ul {
+  float: right;
+  margin-right: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 20px;
+  margin-top: 22px;
+}
+
+nav ul li a {
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 500;
   font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
-.nav-expand-lg .navbar-nav .nav-link {
-  padding: 1rem 0.8rem;
+nav ul li a:hover {
+  color: rgb(219, 219, 219);
+  transition: 0.2s;
+}
+
+.sem-hover:hover {
+  color: #fff;
+}
+
+.assinante {
+  background-color: #f31d1d;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #f31d1d;
+  float: right;
+  line-height: 70px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 50;
+}
+
+#check {
+  display: none;
 }
 
 .lupa {
@@ -52,6 +93,7 @@ header .fundo-menu {
 
 .container-fluid {
   padding: 0;
+  margin: 0;
 }
 
 /*TEXTO RESILIA*/
@@ -113,6 +155,71 @@ footer img {
 }
 
 /* -------------- RESPONSVO HOME -----------------*/
+
+/*MENU RESPONSIVO*/
+
+@media (max-width: 750px) {
+  .checkbtn {
+    display: block;
+    z-index: 50;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .assinante {
+    background-color: #000;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .sem-hover-btn:hover {
+    color: #fff;
+    background-color: black;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #f31d1d;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    color: #fff;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/*GERAL*/
 
 @media screen and (max-width: 1397px) {
   .carousel-inner {
