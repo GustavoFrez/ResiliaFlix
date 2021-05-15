@@ -136,6 +136,11 @@ nav ul li a:hover {
   margin: 10px;
 }
 
+.galeria-resilia img:hover{
+  opacity : 0.4;
+  transition: 0.4s;
+}
+
 /*FOOTER*/
 
 footer {
