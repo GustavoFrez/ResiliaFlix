@@ -105,9 +105,17 @@ nav ul li a:hover {
 .resiliaflix img {
   width: 18%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin: 0 auto;
   display: flex;
+}
+
+.texto-descricao-resilia {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }
 
 /*GALERIA FILMES*/
