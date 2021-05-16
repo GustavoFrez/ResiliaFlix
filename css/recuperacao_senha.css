@@ -1,14 +1,22 @@
 .formulario {
      background-color:#2f2f2f;
      color:#fff;
-     height:100%;
+     height:1000px;
 }
 
 .title{
 text-transform: uppercase;
 font-size: 1.75rem;
 }
+  .box-formulario{
+  background-color:red;
+  max-width:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items :center;
 
+  }
 
 
 
