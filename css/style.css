@@ -2,7 +2,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 250px;
   box-sizing: border-box;
 }
 
@@ -159,16 +158,17 @@ nav ul li a:hover {
 
 /*FOOTER*/
 
+
 footer {
+  text-align: center;
+  padding-top: 8px;
   width: 100%;
   height: 60px;
   color: #fff;
   background-color: #f31d1d;
 }
 
-.footer {
-  text-align: center;
-  padding-top: 8px;
+.footer-resilia {
 }
 
 footer img {
