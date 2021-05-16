@@ -143,11 +143,10 @@ nav ul li a:hover {
   margin: 10px;
 }
 
-.galeria-resilia img:hover{
-  opacity : 0.4;
+.galeria-resilia img:hover {
+  opacity: 0.4;
   transition: 0.4s;
 }
-
 
 /*ASSINATURA */
 
@@ -155,9 +154,7 @@ nav ul li a:hover {
   background-color: #000;
 }
 
-
 /*FOOTER*/
-
 
 footer {
   text-align: center;
@@ -166,9 +163,6 @@ footer {
   height: 60px;
   color: #fff;
   background-color: #f31d1d;
-}
-
-.footer-resilia {
 }
 
 footer img {
