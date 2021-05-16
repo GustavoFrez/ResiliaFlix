@@ -119,7 +119,7 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 0;
-  background: red;
+  background: #f31d1d;
   transition: all 0.2s ease-out, color 0.2s ease-out;
   font-weight: 300;
 }
@@ -132,6 +132,16 @@ body {
   outline: 0;
   box-shadow: none;
 }
+
+/*MENU RESPONSIVO */ 
+
+@media (max-width: 750px) {
+  .busca-resilia {
+    display: none;
+  }
+}
+
+/*BUSCADOR RESPONSIVO*/
 
 @media screen and (max-width: 992px) {
   .s130 form .inner-form .input-field {
@@ -162,3 +172,4 @@ body {
     font-size: 13px;
   }
 }
+
