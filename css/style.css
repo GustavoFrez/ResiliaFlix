@@ -148,6 +148,49 @@ nav ul li a:hover {
   transition: 0.4s;
 }
 
+/*MOISACO*/
+
+.mosaico-resiliaflex {
+  background-color: #000;
+  
+}
+
+.container-mosaico{
+  max-width: 1700px;
+  margin: 0 auto;
+ 
+} 
+
+.moisaco {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foto-mosaico {
+  width: 60%;
+}
+
+.texto-moisaco {
+  width: 40%;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.texto-moisaco img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+
+
+
 /*ASSINATURA */
 
 .assinatura {
@@ -254,4 +297,34 @@ footer img {
   .galeria-resilia div {
     text-align: center;
   }
+}
+ 
+
+/*TESTEEE*/
+
+@media screen and (max-width: 860px) {
+  
+  .texto-moisaco {
+    order: 1;
+    width:100%;
+  }
+  .texto-moisaco img {
+    width: 30%;
+  }
+
+  .foto-mosaico {
+    order: 2;
+    width: 100%;
+
+  }
+  
+
+
+  .mosaico {
+    flex-wrap: wrap;  
+    flex-direction: column;
+  }
+
+
+   
 }
