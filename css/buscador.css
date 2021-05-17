@@ -64,7 +64,7 @@ body {
 }
 
 .s130 form .inner-form .input-field input::-webkit-input-placeholder {
-  color: #222;
+  color: #969696;
   font-size: 16px;
 }
 
@@ -133,6 +133,60 @@ body {
   box-shadow: none;
 }
 
+/* ---------------- CARDS DOS FILMES --------------- */
+#movie-cards {
+  width: 100%;
+  float: left;
+}
+.cardm {
+  width: 40%;
+  float: left;
+  margin: 2% 5% 0 5%;
+  background: #000000;
+  color: #FFFFFF;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cardm:nth-child(odd) {
+  float: left!important;
+}
+
+.cardm:nth-child(even){
+  float: right!important;
+}
+
+.card-left {
+  width: 40%;
+  float: left;
+}
+.card-right {
+  float: left;
+  width: 60%;
+  text-align: left;
+  padding: 2%;
+}
+
+.card-left img {
+  border-radius: 10px 0 10px 0;
+  max-height: 426px;
+}
+
+.card-right-info ul li {
+    float: left;
+    margin-right: 6%;
+}
+
+.card-right-info ul {
+    width: 100%;
+    text-align: left;
+    float: left;padding: 0;
+}
+
+.card-right-info ul:nth-child(3) {
+    margin-bottom: 0!important;
+}
+
 /*MENU RESPONSIVO */ 
 
 @media (max-width: 750px) {
@@ -172,4 +226,3 @@ body {
     font-size: 13px;
   }
 }
-
