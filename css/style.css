@@ -155,7 +155,7 @@ nav ul li a:hover {
   
 }
 
-.container-mosaico h1{
+.modelo-titulo {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -200,6 +200,108 @@ nav ul li a:hover {
 .texto-moisaco img {
   width: 40%;
   margin-bottom: 20px;
+}
+
+/*CARS ASSINATURA*/
+
+.cards-assinatura {
+  background-color: #1f1f1f;
+  width: 100%;
+  color: #fff;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-resiliaflix {
+  width: 250px;
+  height: 315px;
+  background-color: #333;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.card-resiliaflix h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.card-resiliaflix h3:after {
+  content: "";
+  display: block;
+  max-width: 220px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.card-resiliaflix h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.preco-parcelas {
+  display: flex;
+  justify-content: space-around;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.parcelas{
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cifrao {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cifrao span {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.adicionais-cards {
+  margin: 8px;
+ }
+
+.adicionais-cards p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.btn-cards {
+  background-color: #f31d1d;
+  border: none;
+  width: 220px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn-cards:hover {
+  background-color: rgb(194, 1, 1);;
 }
 
 /*TV RESILIAFLIX*/
@@ -251,16 +353,6 @@ nav ul li a:hover {
 
 .foto-tv img {
    width: 80%;
-}
-
-
-
-
-
-/*ASSINATURA */
-
-.assinatura {
-  background-color: #000;
 }
 
 /*FOOTER*/
