@@ -24,6 +24,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .github img {
@@ -40,26 +41,15 @@ main {
   color: rgb(219, 219, 219);
 }
 
-.div-frez {
+.div-frez, .div-pedro, .div-gustavo {
     background-color: #000;
     text-align: center;
 }
 
-/*.div-barbara {
-  background-color: #A2205C;
+.div-barbara, .div-ale {
+  background-color: #2F2F2F;
+  text-align: center;
 }
-
-.div-pedro {
-  background-color: #374136;
-}
-
-.div-ale {
-  background-color: #E86132;
-}
-
-.div-gustavo {
-  background-color: #3B3736;
-} */
 
 .border-5, .border-w-5 {
     border-width: 5px !important;
