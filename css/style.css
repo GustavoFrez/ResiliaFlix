@@ -103,18 +103,18 @@ nav ul li a:hover {
 
 .resiliaflix img {
   width: 18%;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   margin: 0 auto;
   display: flex;
 }
 
 .texto-descricao-resilia {
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #fff;
   margin-bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 /*GALERIA FILMES*/
@@ -148,17 +148,28 @@ nav ul li a:hover {
   transition: 0.4s;
 }
 
-/*MOISACO*/
+/*MOISACO FILMES*/
 
 .mosaico-resiliaflex {
   background-color: #000;
   
 }
 
+.container-mosaico h1{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.65rem;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .container-mosaico{
   max-width: 1700px;
   margin: 0 auto;
- 
 } 
 
 .moisaco {
@@ -168,6 +179,8 @@ nav ul li a:hover {
 
 .foto-mosaico {
   width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .texto-moisaco {
@@ -180,13 +193,66 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  letter-spacing: 1px;
   
 }
 
 .texto-moisaco img {
-  width: 50%;
+  width: 40%;
   margin-bottom: 20px;
 }
+
+/*TV RESILIAFLIX*/
+
+.tv-resiliaflex {
+  background-color: #000;
+  display: flex;
+}
+
+.container-tv {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.tv-assinatura {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.tv-assinatura h2 {
+  font-family:'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.tv-assinatura p {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 25px;
+}
+
+.box-tv {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.foto-tv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.foto-tv img {
+   width: 80%;
+}
+
 
 
 
@@ -277,13 +343,20 @@ footer img {
   }
 }
 
-/*GERAL*/
+/*GERAL  RESPOSIVO */
 
 @media screen and (max-width: 1397px) {
+  .carousel-inner {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 1357px) {
   .carousel-inner {
     height: auto;
   }
 }
+
 
 @media screen and (max-width: 767px) {
   .resiliaflix img {
@@ -300,13 +373,12 @@ footer img {
 }
  
 
-/*TESTEEE*/
+/*RESPOSIVO MOSAICO FIMLES*/
 
 @media screen and (max-width: 860px) {
   
-  .texto-moisaco {
-    order: 1;
-    width:100%;
+  .tv-assinatura {
+     width:100%;
   }
   .texto-moisaco img {
     width: 30%;
@@ -317,14 +389,32 @@ footer img {
     width: 100%;
 
   }
-  
-
-
   .mosaico {
     flex-wrap: wrap;  
     flex-direction: column;
   }
+}
 
+/*RESPOSIVO TV RESILIA FLIX*/
 
-   
+@media screen and (max-width: 860px) {
+  
+  .texto-moisaco {
+    width:100%;
+  }
+  .foto-tv {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-tv {
+    width: 100%;
+    padding-top: 0;
+  }
+ 
+  .container-tv {
+    flex-wrap: wrap;  
+    flex-direction: column;
+  }
 }
