@@ -1,57 +1,51 @@
-body {
-    background-color: #000000;
-    font-family: "Roboto", sans-serif;
-    min-width: 250px;
-    box-sizing: border-box;
-}
-
-header .fundo-menu {
-    background-color: #000000;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  #nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  
-  #logo {
-    width: 130px;
-    margin-left: 30px;
-  }
-  
-  .navbar-nav {
-    margin-right: 20px;
-  }
-  
-  #navbar-links a {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 15px;
-  }
-  
-  .nav-expand-lg .navbar-nav .nav-link {
-    padding: 1rem 0.8rem;
-  }
-  
-  .lupa {
-    width: 16px;
-    cursor: pointer;
-  }
-
 main {
     text-decoration: none;
     background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.titulo-contato {
+  width: 100%;
+  background-color: #2F2F2F;
+}
+
+.titulo-contato h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.centralizar-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github img {
+  width: 5%;
+  margin-right: 10px;
+}
+
+.github a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.github span:hover{
+  color: rgb(219, 219, 219);
 }
 
 .div-frez {
-    background-color: #254458;
-    position: relative;
+    background-color: #000;
+    text-align: center;
 }
 
-.div-barbara {
+/*.div-barbara {
   background-color: #A2205C;
 }
 
@@ -65,7 +59,7 @@ main {
 
 .div-gustavo {
   background-color: #3B3736;
-}
+} */
 
 .border-5, .border-w-5 {
     border-width: 5px !important;
@@ -98,5 +92,4 @@ footer {
   
   footer img {
     width: 100px;
-   
   }
