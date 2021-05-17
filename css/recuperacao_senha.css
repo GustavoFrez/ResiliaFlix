@@ -1,6 +1,7 @@
 .formulario {
   background-color: #2f2f2f;
   color: #fff;
+  
 }
 
 
@@ -10,17 +11,70 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   
  }
-
   
-
 
 .title {
   text-transform: uppercase;
   font-size: 1.75rem;
+ 
 }
 
 .box-formulario {
-  background-color: red;
+  background-color:black;
   max-width: 500px;
+  border-radius: 20px;
+  opacity: 0.6;
+  
 }
+
+
+.box-formulario{
+  opacity : 0.4
+}
+
+
+#enviar {
+  width:80%;
+  border-radius:  30px;
+  margin-left: 8%;
+  padding-top: 5px;
+       
+}
+
+ 
+
+ #enviar:hover{
+	color:  red;
+	background-color: black;
+	border-radius: 30px ;
+  
+  
+  
+}
+
+.form-control{
+  height: 20%;
+  width:80%;
+  border-radius:30px ;
+  margin-left: 8%; 
+  padding-top: 18px;
+  border: 0;
+  
+   }
+
+
+   .exampleInputEmail1 {
+    margin-left: 20%;
+    text-align: center;
+    border: black;
+
+   }
+
+
+   
+  
+
+
+   
