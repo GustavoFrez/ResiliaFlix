@@ -21,7 +21,7 @@ $(".btn-search").on('click', function()
                     filmesId.push(dadosBusca[i].imdbID);
 
                     $.ajax({
-                        'url':"https://www.omdbapi.com/?apikey=f5a096fa&i=" + filmesId[i] + "&plot=full&r=json",
+                        'url':"https://www.omdbapi.com/?apikey=f5a096fa&i=" + filmesId[i] + "&plot=short&r=json",
                         'success': function(resultado)
                         {
                             $(`         
@@ -64,8 +64,8 @@ $(".btn-search").on('click', function()
             }
             else 
             {   
-                $("p").remove();
-                $("body").append($(`<div class="card-error"> <p> Nenhum filme encontrado! </p> </div>`));
+                $("div.card-error").remove();
+                $("#movie-cards").append($(`<div class="card-error"> <p> Nenhum filme encontrado! </p> </div>`));
             }            
         }            
     });
