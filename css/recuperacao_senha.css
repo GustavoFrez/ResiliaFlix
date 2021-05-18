@@ -23,4 +23,37 @@
 .box-formulario {
   background-color: red;
   max-width: 500px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  border-radius: 20px;
+  opacity: 0.6;
+  
+}
+
+
+.box-formulario{
+  opacity : 0.4
+}
+
+
+#enviar {
+  width:80%;
+  border-radius:  30px;
+  margin-left: 8%;
+  padding-top: 5px;
+       
+}
+
+ 
+
+ #enviar:hover{
+	color:  red;
+	background-color: black;
+	border-radius: 30px ;
+  
+    
+=======
+>>>>>>> parent of 7251897 (alterando estilo)
+=======
+>>>>>>> parent of 7251897 (alterando estilo)
 }
