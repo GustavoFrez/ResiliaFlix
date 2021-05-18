@@ -28,11 +28,12 @@ $.ajax({
                                     </p>
 
                                     <ul>
-                                        <li>Diretor: ${resultado.Director}</li>
-                                        <li>Elenco: ${resultado.Actors}</li>
-                                        <li>País: ${resultado.Country}</li>
+                                        <li>Diretor: ${resultado.Director}</li><br>
+                                        <li>Elenco: ${resultado.Actors}</li><br>
+                                        <li>País: ${resultado.Country}</li><br>
+                                        <li>Nota: ${resultado.Ratings[0].Value}</li>
                                     </ul>
-                                    <p>Nota: ${resultado.Ratings[0].Value}</p>
+                                    
                                     
                                 </div>
                                 

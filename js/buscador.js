@@ -11,6 +11,7 @@ $(".btn-search").on('click', function()
         'url':urlStr,
         'success': function(dados)
         {   
+            $("body").addClass('aparecer')
             $("#movie-cards").html(``);
             var dadosBusca = dados.Search;
             
@@ -70,3 +71,4 @@ $(".btn-search").on('click', function()
         }            
     });
 });
+
