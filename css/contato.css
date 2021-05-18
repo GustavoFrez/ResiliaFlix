@@ -1,16 +1,21 @@
+body {
+  background-color: #000;
+  margin-left: 6px;
+}
+
 main {
-    text-decoration: none;
-    background-color: #FFFFFF;
-    color: #FFFFFF;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
 .titulo-contato {
   width: 100%;
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
 }
 
 .titulo-contato h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -18,6 +23,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.sem-padding {
+  padding: 0;
+  margin: 0;
 }
 
 .github {
@@ -34,52 +44,45 @@ main {
 
 .github a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
-.github span:hover{
+.github span:hover {
   color: rgb(219, 219, 219);
 }
 
-.div-frez, .div-pedro, .div-gustavo {
-    background-color: #000;
-    text-align: center;
-}
-
-.div-barbara, .div-ale {
-  background-color: #2F2F2F;
+.div-frez,
+.div-pedro,
+.div-gustavo {
+  background-color: #000;
   text-align: center;
 }
 
-.border-5, .border-w-5 {
-    border-width: 5px !important;
+.div-barbara,
+.div-ale {
+  background-color: #2f2f2f;
+  text-align: center;
 }
-.border-white {
-    border: 1px solid transparent;
-    border-color: #FFFFFF !important;
-}
-hr.hr-primary {
-    border-top-color: #CC164D!important;
-}
+
 em {
-    font-style: italic;
+  font-style: italic;
 }
 .font-weight-normal {
-    font-weight: 400 !important;
+  font-weight: 400 !important;
 }
 
 footer {
-    width: 100%;
-    height: 60px;
-    color: #FFFFFF;
-    background-color: #F31D1D;
-  }
-  
-  .footer {
-   text-align: center;
-   padding-top: 8px;
-  }
-  
-  footer img {
-    width: 100px;
-  }
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  background-color: #f31d1d;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 8px;
+}
+
+footer img {
+  width: 100px;
+}
