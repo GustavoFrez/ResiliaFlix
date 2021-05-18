@@ -1,10 +1,18 @@
 /* -------------- BUSCADOR -----------------*/
 
 body {
+  background-image: url('../img/buscar-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   font-family: "Roboto", sans-serif;
   min-width: 250px;
   box-sizing: border-box;
   background-color: #3c3c3c;
+}
+
+.aparecer {
+  background-blend-mode: screen;
 }
 
 header {
