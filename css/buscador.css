@@ -1,7 +1,7 @@
 /* -------------- BUSCADOR -----------------*/
 
 body {
-  background-image: url("img/buscar-bg.png");
+  background-image: url('../img/buscar-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
