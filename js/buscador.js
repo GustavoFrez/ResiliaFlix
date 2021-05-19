@@ -25,6 +25,12 @@ $(".btn-search").on('click', function()
                         'url':"https://www.omdbapi.com/?apikey=f5a096fa&i=" + filmesId[i] + "&plot=short&r=json",
                         'success': function(resultado)
                         {
+                            if(resultado.Poster == "N/A")
+                                resultado.Poster = "img/imagem-nao-disponivel.png";
+
+                            if(resultado.Ratings[0].Value == undefined)
+                                resultado.Ratings[0].Value = "Sem nota"
+
                             $(`         
                             
                                 <div class="cardm">
@@ -47,11 +53,11 @@ $(".btn-search").on('click', function()
                                         <p>${resultado.Plot}</p>
 
                                         <ul>
-                                            <li>Diretor: ${resultado.Director}</li>
-                                            <li>Elenco: ${resultado.Actors}</li>
-                                            <li>País: ${resultado.Country}</li>
+                                            <li><b>Diretor:</b> ${resultado.Director}</li>
+                                            <li><b>Elenco:</b> ${resultado.Actors}</li>
+                                            <li><b>País:</b> ${resultado.Country}</li>
                                         </ul>
-                                        <p>Nota: ${resultado.Ratings[0].Value}</p>
+                                        <p><b>Nota:</b> ${resultado.Ratings[0].Value}</p>
                                         
                                     </div>
                                     
@@ -65,10 +71,9 @@ $(".btn-search").on('click', function()
             }
             else 
             {   
-                $("div.card-error").remove();
-                $("#movie-cards").append($(`<div class="card-error"> <p> Nenhum filme encontrado! </p> </div>`));
+                $("p.msg-error").remove();
+                $("#error-search").append($(`<p class="msg-error"> Mídia não encontrada :( </p>`));
             }            
         }            
     });
 });
-

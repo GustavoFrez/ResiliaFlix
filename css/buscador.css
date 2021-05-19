@@ -2,8 +2,6 @@
 
 body {
   background-image: url('../img/buscar-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   font-family: "Roboto", sans-serif;
   min-width: 250px;
@@ -37,18 +35,18 @@ label.logo {
   margin: 22px 30px;
 }
   
-nav ul {
+nav .lista-menu {
   float: right;
   margin-right: 15px;
 }
   
-nav ul li {
+nav .lista-menu li {
   display: inline-block;
   line-height: 20px;
   margin-top: 22px;
 }
   
-nav ul li a {
+nav .lista-menu li a {
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -58,7 +56,7 @@ nav ul li a {
   letter-spacing: 2px;
 }
   
-nav ul li a:hover {
+nav .lista-menu li a:hover {
   color: rgb(219, 219, 219);
   transition: 0.2s;
 }
@@ -96,10 +94,8 @@ nav ul li a:hover {
 /* ---------------- BARRA DE PESQUISA --------------- */
 
 .s130 {
-  min-height: 30vh;
-  display: -ms-flexbox;
+  min-height: 27vh;
   display: flex;
-  -ms-flex-pack: center; 
   justify-content: center;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -114,15 +110,12 @@ nav ul li a:hover {
 }
   
 .s130 form .inner-form {
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-align: center;
   align-items: center;
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 34px;
+  border-radius: 12px;
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -163,23 +156,14 @@ nav ul li a:hover {
 }
   
 .s130 form .inner-form .input-field.first-wrap {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
-    display: -ms-flexbox;
+    flex-grow: 1;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     background: #FFFFFF;
-}
-  
-.s130 form .inner-form .input-field.first-wrap input {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
 }
   
 .s130 form .inner-form .input-field.first-wrap .svg-wrapper {
     min-width: 80px;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
@@ -250,12 +234,6 @@ nav ul li a:hover {
   width: 40%;
   float: left;
 }
-.card-right {
-  float: left;
-  width: 60%;
-  text-align: left;
-  padding: 2%;
-}
 
 .card-left img {
   border-radius: 10px 0 0 10px;
@@ -263,6 +241,13 @@ nav ul li a:hover {
   width: 100%;
   /* width: -webkit-fill-available; */
   height: fit-content;
+}
+
+.card-right {
+  float: left;
+  width: 60%;
+  text-align: left;
+  padding: 2%;
 }
 
 .card-right-info ul li {
@@ -278,6 +263,26 @@ nav ul li a:hover {
 
 .card-right-info ul:nth-child(3) {
     margin-bottom: 0!important;
+}
+
+/* ---------------- ERRO DE BUSCA --------------- */
+div#error-search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 66px;
+}
+
+p.msg-error {
+  background: #f31d1d;
+  width: 390px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0;
+  border-radius: 5px;
+  color: white;
+  -webkit-text-stroke: 0px black;
+  font-family: Montserrat;
 }
 
 /* ---------------- FOOTER --------------- */
@@ -326,7 +331,7 @@ footer img {
   background-color: black;
 }
 
-ul {
+nav .lista-menu {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -338,19 +343,19 @@ ul {
   z-index: 10;
 }
 
-nav ul li {
+nav .lista-menu li {
   display: block;
   margin: 20px 0;
   line-height: 30px;
 }
 
-nav ul li a {
+nav .lista-menu li a {
   font-size: 16px;
   color: white;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+nav .lista-menu li a:hover {
   color: #fff;
 }
 
@@ -359,7 +364,7 @@ a.active {
   background: none;
 }
 
-#check:checked ~ ul {
+#check:checked ~ .lista-menu {
   left: 0;
 }
 }
@@ -375,11 +380,8 @@ a.active {
 @media screen and (max-width: 767px) {
   .s130 form .inner-form .input-field.first-wrap .svg-wrapper {
     min-width: 40px;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 0 10px;
   }
@@ -394,4 +396,22 @@ a.active {
   .s130 form .inner-form .input-field.second-wrap .btn-search {
     font-size: 13px;
   }
+}
+
+
+/* ---------------- CARDS RESPONSIVOS --------------- */  
+
+@media screen and (max-width: 1024px) {
+
+#movie-cards {
+  width: 100%;
+  float: left;
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 0;
+}
+
+.cardm {
+  margin: 0px 0 3% 2%;
+}
 }
