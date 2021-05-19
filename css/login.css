@@ -1,62 +1,59 @@
 body {
-    background-image: url("/img/bg-login.png");
-    background-size: cover;
-    background-position: inherit ;
-    color: #fff;
-
-   
-}  
+  background-image: url("../img/bg-login.png");
+  background-size: cover;
+  background-position: inherit;
+  color: #fff;
+  height: auto;
+}
 
 .login-box {
-    width: 280px;
-    height: 370px;
-    background: rgb(0, 0, 0);
-    box-shadow: 0 5px 10px rgba(78, 78, 78, 0.8);
-    border-radius: 10px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    padding: 70px 30px;
-  
+  width: 280px;
+  height: 370px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 5px 10px rgba(78, 78, 78, 0.8);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 70px 30px;
 }
 
 .logo-login {
-    width: 70%;
-    height: auto;
-    position: absolute;
-    top: 13%;
-    left: calc(25% - 25px);
+  width: 70%;
+  height: auto;
+  position: absolute;
+  top: 13%;
+  left: calc(25% - 25px);
 }
 
 .login-titulo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 .input-login {
-    width: 220px;
-    height: 30px;
-    border: none;
-    border-radius: 2px;
-    outline: none;
-    margin-bottom: 20px;
+  width: 220px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 20px;
 }
 
-.menos-margin{
-    margin-bottom: 0px;
+.menos-margin {
+  margin-bottom: 0px;
 }
 
 .input-login::placeholder {
-    color: #000;
-    font-size: 0.85rem;
-    padding-left: 5px;
+  color: #000;
+  font-size: 0.85rem;
+  padding-left: 5px;
 }
-
 
 .btn-login {
   background-color: #f31d1d;
@@ -68,30 +65,29 @@ body {
   font-size: 1em;
   text-transform: uppercase;
   cursor: pointer;
-
 }
 
 .btn-login:hover {
-  background-color: rgb(194, 1, 1);;
+  background-color: rgb(194, 1, 1);
 }
 
 .login-box a {
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
 }
 
 .login-box a p {
-    font-size: 0.85rem;
+  font-size: 0.85rem;
 }
 
 .login-box a p:hover {
-    color: rgb(219, 219, 219);
+  color: rgb(219, 219, 219);
 }
 
 .cadastra-login {
- text-transform: uppercase;
- font-weight: 700;
- padding-top: 15px;
- margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-bottom: 8px;
 }

@@ -1,6 +1,9 @@
 body {
-  background-color: #1f1f1f;
+  background-image: url('../img/bg-login.png');
+  background-size: cover;
+  background-position: inherit;
   color: #fff;
+  height: auto;
 }
 
 .hidden {
@@ -20,7 +23,7 @@ body {
   width: 280px;
   height: 350px;
   background: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 10px rgba(78, 78, 78, 0.8);
   border-radius: 10px;
   top: 50%;
   left: 50%;
