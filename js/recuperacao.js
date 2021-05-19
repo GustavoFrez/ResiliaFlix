@@ -12,7 +12,6 @@ $('#envia').on('click', function () {
     $.ajax({
       url: urlStr,
       success: function () {
-        alert('aviso')
         $('#sucessR').addClass('show')
       }
     })
