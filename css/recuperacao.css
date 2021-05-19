@@ -1,10 +1,11 @@
 body {
   background-image: url('../img/bg-login.png');
   background-size: cover;
+  height: 100vh;
   background-position: inherit;
   background-repeat: no-repeat;
   color: #fff;
-  height: auto;
+  
 }
 
 .hidden {
