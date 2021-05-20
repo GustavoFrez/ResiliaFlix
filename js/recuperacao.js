@@ -7,10 +7,9 @@ $('#envia').on('click', function () {
     )
   ) {
     var mailbo = $('#emailbox').val()
-    var urlStr =
-      'https://www.omdbapi.com/?apikey=f5a096fa&s=filme&plot=full&r=json'
+    var urlStr = 'https://www.omdbapi.com/?apikey=f5a096fa&s=filme&plot=full&r=json%27';
     $.ajax({
-      url: urlStr,
+      url: urlStr ,
       success: function () {
         $('#sucessR').addClass('show')
       }

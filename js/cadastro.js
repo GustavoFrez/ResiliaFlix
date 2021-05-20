@@ -22,6 +22,13 @@ $(document).ready(function(){
         })
     })
 })
+$('#validationCustom04').click(function(){
+    const senha = $('#validationCustom03').val;
+    const confSenha = $('#validationCustom04').val;
+    if(senha == confSenha){
+        
+    }
+})
 
 
 
