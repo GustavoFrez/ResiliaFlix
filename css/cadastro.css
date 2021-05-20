@@ -1,61 +1,196 @@
 body {
-    font-family: "Roboto", sans-serif;
-    min-width: 250px;
-    box-sizing: border-box;
+  background-image: url("../img/bg-login.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.centraliza {
+  text-align: center;
+}
+
+.form-group {
+  width: 350px;
+  text-align: center;
+}
+
+.form-check-input {
+  margin: 4px 0px 15px 8px !important;
+}
+
+.login-box {
+  width: 410px;
+  height: 700px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 5px 10px rgba(78, 78, 78, 0.8);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -49%);
+  padding: 20px 20px;
+}
+
+.logo-login {
+  width: 40%;
+  height: auto;
+  display: absolute;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  left: calc(25% - 25px);
+}
+
+.login-titulo {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.input-login {
+  width: 350px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.diminuir-campo {
+  width: 166px !important;
+}
+
+.margem-direita {
+  margin-right: 14px !important;
+}
+
+.diminuir-campo-numero {
+  width: 66px !important;
+}
+
+.diminuir-campo-bairro {
+  width: 265px !important;
+}
+
+.menos-margin {
+  margin-bottom: 0px;
+}
+
+.input-login::placeholder {
+  color: rgb(129, 129, 129);
+  font-size: 0.85rem;
+  padding-left: 5px;
+}
+
+.btn-login {
+  background-color: #f31d1d;
+  border: none;
+  width: 350px;
+  height: 35px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.btn-login:hover {
+  background-color: rgb(194, 1, 1);
+}
+
+.login-box a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-box a p {
+  font-size: 0.85rem;
+}
+
+.login-box a p:hover {
+  color: rgb(219, 219, 219);
+}
+
+.cadastra-login {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-bottom: 8px;
+}
+
+/*RESPONSIVO CADASTRO*/
+
+@media (max-width: 750px) {
+  body {
+    background-repeat: repeat;
+    height: 100vh;
   }
-  
-  /*MENU*/
-  
-  header .fundo-menu {
-    background-color: #000;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  #nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  
-  #logo {
-    width: 130px;
-    margin-left: 30px;
-  }
-  
-  .navbar-nav {
-    margin-right: 20px;
-  }
-  
-  #navbar-links a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 15px;
-  }
-  
-  .nav-expand-lg .navbar-nav .nav-link {
-    padding: 1rem 0.8rem;
-  }
-  
-  .lupa {
-    width: 16px;
-    cursor: pointer;
-  }
-  /*fim do menu*/
-  /*footer*/
   footer {
-    width: 100%;
-    height: 60px;
-    color: #fff;
-    background-color: #F31D1D;
+    display: none;
   }
-  
-  .footer {
-   text-align: center;
-   padding-top: 8px;
+
+  .login-box {
+    width: 200px;
+    height: 880px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgba(78, 78, 78, 0.8);
+    border-radius: 10px;
+    top: 70%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 5%);
+    margin-bottom: 1000px;
   }
-  
-  footer img {
-    width: 100px;
-   
+
+  .logo-login {
+    width: 80%;
   }
+
+  .input-login {
+    width: 150px;
+    height: 23px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    margin-bottom: 20px;
+  }
+
+  .diminuir-campo {
+    width: 150px !important;
+  }
+
+  .margem-direita {
+    margin-right: 0px !important;
+  }
+
+  .diminuir-campo-numero {
+    width: 150px !important;
+  }
+
+  .diminuir-campo-bairro {
+    width: 150px !important;
+  }
+
+  .menos-margin {
+    margin-bottom: 0px;
+  }
+
+  .btn-login {
+    width: 150px;
+    height: 35px;
+  }
+
+  .form-group {
+    width: 0px;
+    text-align: center;
+  }
+
+  .form-check-input {
+    margin: 4px 0px 15px 8px !important;
+  }
+}

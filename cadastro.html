@@ -1,142 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cadastro.css"/>
     <link rel="shortcut icon" href="img/favResiliaFlix.ico" />
-    <title>Cadastro</title>
-</head>
+    <script
+      src="https://kit.fontawesome.com/bc1aad0963.js"
+      crossorigin="anonymous"
+    ></script>
+       <title>Cadastro</title>
+  </head>
 <body>
-    <header>
-        <div id="nav-container" class="fundo-menu">
-          <nav class="navbar navbar-expand-md container" >
-            <a href="index.html">
-              <img
-                id="logo"
-                src="img/LogoBranca_FundoTransparente.svg"
-                alt="ResiliaFlix"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbar-links"
-              aria-controls="navbar-links"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+  <header>
+    <div>
+      <nav class="menu">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+          <a href="index.html">
+            <img
+              src="img/LogoBranca_FundoTransparente.svg"
+              alt="ResiliaFlix"
+            /> </a
+        ></label>
+        <ul>
+          <li>
+            <a href="cadastro.html" class="assinante sem-hover sem-hover-btn"
+              >Seja Assinante</a
             >
-              <span class="navbar-toggler-icon"> </span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbar-links"
-            >
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="">Cadastro</a>
-                <a class="nav-item nav-link" href="">Login</a>
-                <a class="nav-item nav-link" href="">Contato</a>
-                <a class="nav-item nav-link" href="">Buscar</a>
-                <a href="#"></a
-                ><img class="lupa" src="img/search.svg" alt="Lupa de Busca" />
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li>
+            <a href="buscador.html" class="sem-hover"
+              >Busca <img class="lupa" src="img/search.svg" alt="Lupa"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
       <main>
-        <form>
-          <div class="form-row">
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom01">Nome</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom02">Sobrenome</label>
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" required>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label  for="validationCustomUsername">E-mail</label>
-                <input type="email" class="form-control" id="validationCustomUsername" placeholder="E-mail" aria-describedby="inputGroupPrepend" required>
-              </div>
-            </div>
-          <div class="form-row">
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom03">Senha</label>
-              <input type="password" class="form-control" id="validationCustom03" placeholder="Senha" required>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom04">Confirme sua senha</label>
-              <input type="password" class="form-control" id="validationCustom04" placeholder="Confirmação" required>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label>RG</label>
-              <input type="text" class="form-control" id="" placeholder="Digite aqui o número do RG" required>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom05">CEP</label>
-              <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
-              <div class="invalid-feedback">
-                Por favor, informe um CEP válido.
-              </div>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom04">Rua</label>
-              <input type="text" class="form-control" id="rua" placeholder="Rua" required readonly>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom04">Número</label>
-              <input type="number" class="form-control" id="" placeholder="Número" required>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom04">Bairro</label>
-              <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom04">Cidade</label>
-              <input type="text" class="form-control" id="cidade" placeholder="Cidade" required readonly>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom04">Estado</label>
-              <input type="text" class="form-control" id="estado" placeholder="Estado" required readonly>
-            </div>
-            <div class="col-md-6 offset-md-3">
-              <label for="validationCustom04">Complemento</label>
-              <input type="text" class="form-control" id="" placeholder="Complemento" required>
-            </div>
-          </div>
-          <div class="col-md-6 offset-md-3">
-            <div id="content"></div>
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Concordo com os termos e condições
-              </label>
-              <div class="invalid-feedback">
-                Você deve concordar, antes de continuar.
-              </div>
-            </div>
-          </div>
-          <button id="botaoCadastro" class="btn btn-primary" type="submit">Enviar</button>
-          </div>
-        </form>
-      </main>
-      <footer>
-        <div class="footer">
-          <img src="img/LogoBranca_FundoTransparente.svg" alt="Logo ResiliaFlix">
-          <p>Todos os direitos reservados ResiliaFlix &#174;</p>
-        </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <div class="login-box centraliza">
+          <form id="rform">
+            <img
+              class="logo-login"
+              src="img/LogoVermelha_FundoTransparente.png"
+              alt="Logo ResiliaFlix"
+            />
+            <h1 class="login-titulo">Quero me cadastrar</h1>
+            <input
+              class="input-login"
+              type="text"
+              id="validationCustom01"
+              placeholder="Nome"
+              required
+            /><br />
+                      
+
+            <input
+              class="input-login"
+              type="text"
+              id="validationCustom02"
+              placeholder="Sobrenome"
+              required
+            /><br />
+       
+            
+            <input
+              class="input-login"
+              type="email"
+              id="validationCustomUsername"
+              placeholder="E-mail"
+              required
+            /><br />
+
+            <input
+              class="input-login diminuir-campo margem-direita"
+              type="password"
+              id="validationCustom03"
+              placeholder="Senha"
+              required
+            />
+
+            <input
+              class="input-login diminuir-campo "
+              type="password"
+              id="validationCustom04"
+              placeholder="Confirme a Senha"
+              required
+            /> <br />
+            
+           <input
+             class="input-login diminuir-campo margem-direita"
+             type="text"
+             id="rg"
+             placeholder="RG"
+             required
+           />
+
+           <input
+            class="input-login diminuir-campo"
+            type="text"
+            id="validationCustom05"
+            placeholder="CEP"
+            required
+           /><br />
+      
+          <input
+            class="input-login"
+            type="text"
+            id="rua"
+            placeholder="Rua"
+            required
+          /><br />
+        
+          <input
+           class="input-login diminuir-campo-numero margem-direita"
+           type="text"
+           placeholder="Nº"
+           required
+          />       
+
+         <input
+           class="input-login diminuir-campo-bairro"
+           type="text"
+           id="bairro"
+           placeholder="Bairro"
+           required
+         /><br />
+
+
+        <input
+          class="input-login diminuir-campo-bairro margem-direita"
+          type="text"
+          id="cidade"
+          placeholder="Cidade"
+          required
+        />
+
+        <input
+          class="input-login diminuir-campo-numero"
+          type="text"
+          id="estado"
+          placeholder="Estado"
+          required
+        /><br />
+
+        <input
+          class="input-login"
+          type="text"
+          id="complemento"
+          placeholder="Complemento"
+          required
+        /><br />
+
+       <div id="content"></div>
+      <div class="form-group centraliza-check">
+        <div class="form-check">
+    <input class="form-check-input centraliza-check" type="checkbox" value="" id="invalidCheck" required>
+    <label class="form-check-label" for="invalidCheck">
+      Concordo com os termos e condições
+    </label>
+    <div class="invalid-feedback">
+      Você deve concordar, antes de continuar.
+    </div>
+  </div>
+</div>       
+
+     <button id="botaoCadastro" class="btn-login" type="submit" value="">Enviar<button>
+   
+ </form>
+
+      
+</main>  
+
+<footer class="footer fixed-bottom">
+  <img src="img/LogoBranca_FundoTransparente.svg" alt="Logo ResiliaFlix" />
+  <p>Todos os direitos reservados ResiliaFlix &#174;</p>
+</footer>    
+      
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
