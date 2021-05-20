@@ -1,5 +1,5 @@
 $('#rform').submit(false)
-var mailbo = $('#emailbox').val();
+
 $('#envia').on('click', function () {
   if (
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
@@ -7,9 +7,9 @@ $('#envia').on('click', function () {
     )
   ) {
     var mailbo = $('#emailbox').val()
-    
+    var urlStr = 'https://www.omdbapi.com/?apikey=f5a096fa&s=filme&plot=full&r=json%27';
     $.ajax({
-      url: true ,
+      url: urlStr ,
       success: function () {
         $('#sucessR').addClass('show')
       }
