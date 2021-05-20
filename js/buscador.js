@@ -29,7 +29,7 @@ $(".btn-search").on('click', function()
                                 resultado.Poster = "img/imagem-nao-disponivel.png";
 
                             if(resultado.Ratings[0].Value == undefined)
-                                resultado.Ratings[0].Value = "Sem nota"
+                                resultado.Ratings[0].Value = "Sem nota";
 
                             $(`         
                             
@@ -68,6 +68,7 @@ $(".btn-search").on('click', function()
                     });
                 } 
                 filmesId = [];
+                $("p.msg-error").remove();
             }
             else 
             {   
